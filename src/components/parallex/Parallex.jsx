@@ -3,8 +3,14 @@ import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import paraImg from "../../../public/sunrise1.png";
-import new_collections from "../../../public/new_collections";
+import our_collection from "../../../public/our_collection";
 import Item from "../item/Item";
+import { Libre_Baskerville } from "@next/font/google";
+
+const libreBaskerville = Libre_Baskerville({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 const Parallex = () => {
   const { scrollYProgress } = useScroll();
@@ -14,7 +20,7 @@ const Parallex = () => {
 
   return (
     <div>
-      <div className=" bg-slate-100 ">
+      <div className="  " style={{ backgroundColor: "#F8F7F6"}}>
         <div className="parallex h-screen grid grid-cols-2 items-center justify-center mx-20">
           {/* Image moves horizontally on scroll */}
           <motion.div style={{ x }}>
@@ -28,17 +34,17 @@ const Parallex = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center text-black font-black tracking-tight">
-              NEW ARRIVALS
+            <h1 className={`${libreBaskerville.className} text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center text-black font-black `}>
+              Our Collection
             </h1>
-            <h3 className="text-center text-xs md:text-sm">
+            <h3 className="text-center text-xs md:text-sm" style={{ color: "#868686" }}>
               Just Landed: The Hottest Watches of the Season!
             </h3>
           </motion.div>
         </div>
 
         <div className="grid md:grid-cols-4 grid-cols-2 gap-5 mx-20 pb-20">
-          {new_collections.map((item, index) => {
+          {our_collection.map((item, index) => {
             return (
               <Item
                 key={index}

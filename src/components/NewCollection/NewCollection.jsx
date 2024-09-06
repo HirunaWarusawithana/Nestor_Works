@@ -15,7 +15,7 @@ const NewCollection = () => {
         className={`${libreBaskerville.className} lg:text-5xl md:text-4xl text-2xl mb-12`}
         style={{ color: "#242424" }}
       >
-        Our Collection
+        New Collection
       </h1>
 
       <p className="md:mx-44 sm:mx-28 mx-10 mb-14 text-base" style={{ color: "#868686" }}>

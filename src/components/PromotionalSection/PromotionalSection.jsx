@@ -10,7 +10,8 @@ const libreBaskerville = Libre_Baskerville({
 
 const PromotionalSection = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 mx-14 md:mx-28 gap-3 ">
+    <div className="grid grid-cols-1 md:grid-cols-2 my-32 mx-14 md:mx-28 gap-3 lg:mx-24 lg:h-[450px]">
+
       <div className="flex flex-col justify-center gap-3">
         <h1
           className={`${libreBaskerville.className} mb-3 lg:text-5xl md:text-4xl text-2xl`}
@@ -24,7 +25,7 @@ const PromotionalSection = () => {
           want to know what makes Swiss watches stand out?
         </p>
         <button
-          className="w-40 mb-3 mt-6 px-5 py-3 duration-500 border-2 border-[#F8F7F6] text-[#242424] hover:bg-[#242424] hover:text-[#F8F7F6]"
+          className="w-40 mb-3 mt-6 px-5 py-3 duration-300 border-4 border-[#F8F7F6] text-[#242424] hover:bg-[#242424] hover:text-[#F8F7F6] hover:border-[#242424]"
           style={{
             fontSize: "14px",
           }}
