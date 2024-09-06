@@ -1,7 +1,9 @@
-import { Inter } from "next/font/google";
+import { Karla } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+// Importing the Karla font with specific weights
+const karla = Karla({ subsets: ["latin"], weight: ["200", "400", "700"] }); 
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={karla.className}> {/* Apply Karla font */}
+        <Navbar/>
+        {children}
+      </body>
     </html>
   );
 }

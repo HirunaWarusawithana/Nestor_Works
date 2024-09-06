@@ -1,0 +1,25 @@
+.firefly {
+    animation-name: firefly;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes firefly {
+    0% {
+        transform: translateX(-47%) translateY(-25%) scale(0.6) rotate(20deg);
+    }
+    25% {
+        transform: translateX(-47%) translateY(-22%) scale(0.6) rotate(20deg);
+    }
+    50% {
+        transform: translateX(-47%) translateY(-28%) scale(0.6) rotate(20deg);
+    }
+    75% {
+        transform: translateX(-47%) translateY(-22%) scale(0.6) rotate(20deg);
+    }
+    100% {
+        transform: translateX(-47%) translateY(-28%) scale(0.6) rotate(20deg);
+    }
+}
