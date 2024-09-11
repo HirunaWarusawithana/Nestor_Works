@@ -9,6 +9,9 @@ import new_collections from "../../public/new_collections";
 import CarouselMain from "@/components/CarouselMain/CarouselMain";
 import NewCollection from "@/components/NewCollection/NewCollection";
 import PromotionalSection from "@/components/PromotionalSection/PromotionalSection";
+import AboutHome from "@/components/AboutHome/AboutHome";
+import Footer from "@/components/Footer/Footer";
+import OurProduct from "@/components/OurProducts/OurProduct";
 
 export default function Home() {
   return (
@@ -26,7 +29,10 @@ export default function Home() {
           muted
         ></video>
       </div> */}
-      <Parallex />
+      {/* <Parallex /> */}
+      <OurProduct/>
+      <AboutHome/>
+      <Footer/>
     </div>
   );
 }

@@ -6,7 +6,7 @@ const Item = (props) => {
   return (
     <div>
       <div
-        style={{ backgroundColor: "white" }}
+        style={{ backgroundColor: "#F8F7F6" }}
         className="item hover:shadow-xl duration-300 h-full"
       >
         <div className="pt-5">

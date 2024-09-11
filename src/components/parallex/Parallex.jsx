@@ -20,7 +20,7 @@ const Parallex = () => {
 
   return (
     <div>
-      <div className="  " style={{ backgroundColor: "#F8F7F6"}}>
+      <div className="  " style={{ backgroundColor: ""}}>
         <div className="parallex h-screen grid grid-cols-2 items-center justify-center mx-20">
           {/* Image moves horizontally on scroll */}
           <motion.div style={{ x }}>
