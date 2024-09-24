@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import banner_image from "../../../public/display_image.jpeg";
-import { Libre_Baskerville } from "@next/font/google";
+import { Libre_Baskerville } from "next/font/google";
 
 const libreBaskerville = Libre_Baskerville({
   subsets: ["latin"],
@@ -10,33 +10,39 @@ const libreBaskerville = Libre_Baskerville({
 
 const PromotionalSection = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 my-32 mx-14 md:mx-28 gap-3 lg:mx-24 lg:h-[450px]">
-
-      <div className="flex flex-col justify-center gap-3">
+    <section className="flex flex-col lg:flex-row items-center lg:mx-24 my-24">
+      <div className="w-4/5 lg:w-1/2 p-4">
+        <Image
+          src={banner_image} // Replace with your image path
+          alt="Watch Repair"
+          className=""
+        />
+      </div>
+      <div className="w-4/5 lg:w-1/2 p-4">
         <h1
-          className={`${libreBaskerville.className} mb-3 lg:text-5xl md:text-4xl text-2xl`}
-          style={{color: "#242424" }}
+          className={`${libreBaskerville.className} mb-3 lg:text-4xl md:text-3xl text-xl leading-5 `}
+          style={{ color: "#242424" }}
         >
-          Seiko Essence
+          Designed for Those Who Evade Limits
         </h1>
-        <p className="text-base" style={{ color: "#868686" }}>
-          The first association that comes to one’s mind with the phrase “a good
-          wristwatch” is naturally one made somewhere in Switzerland. Do you
-          want to know what makes Swiss watches stand out?
+        <p className="text-base leading-7" style={{ color: "#868686" }}>
+          Attention to details is always a good feature. We couldn’t think of
+          any better present for our 5th anniversary than a pair of exclusive
+          watches from the Lawson collection. Every time I look at my watch I
+          think of her and feel she thinks of me.
         </p>
-        <button
-          className="w-40 mb-3 mt-6 px-5 py-3 duration-300 border-4 border-[#F8F7F6] text-[#242424] hover:bg-[#242424] hover:text-[#F8F7F6] hover:border-[#242424]"
-          style={{
-            fontSize: "14px",
-          }}
-        >
-          SHOP NOW
-        </button>
+        <div className="flex space-x-4">
+          <button
+            className="w-40 mb-3 mt-6 px-5 py-3 duration-300 border-4 border-[#F8F7F6] text-[#242424] hover:bg-[#242424] hover:text-[#F8F7F6] hover:border-[#242424]"
+            style={{
+              fontSize: "14px",
+            }}
+          >
+            Contact Us
+          </button>
+        </div>
       </div>
-      <div>
-        <Image className="h-full" src={banner_image} alt="Promotional banner" />
-      </div>
-    </div>
+    </section>
   );
 };
 

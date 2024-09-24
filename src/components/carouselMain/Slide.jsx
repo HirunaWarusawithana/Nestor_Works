@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Libre_Baskerville } from "@next/font/google";
+import { Libre_Baskerville } from "next/font/google";
 import animation from "./Slide.module.css";
 import { fadeIn } from "@/app/fadeIn";
 import { AnimatePresence, motion } from "framer-motion";

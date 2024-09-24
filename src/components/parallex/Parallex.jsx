@@ -5,7 +5,7 @@ import Image from "next/image";
 import paraImg from "../../../public/sunrise1.png";
 import our_collection from "../../../public/our_collection";
 import Item from "../item/Item";
-import { Libre_Baskerville } from "@next/font/google";
+import { Libre_Baskerville } from "next/font/google";
 
 const libreBaskerville = Libre_Baskerville({
   subsets: ["latin"],

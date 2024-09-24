@@ -1,7 +1,7 @@
 import React from "react";
 import new_collections from "../../../public/new_collections";
 import Item from "../item/Item";
-import { Libre_Baskerville } from "@next/font/google";
+import { Libre_Baskerville } from "next/font/google";
 
 const libreBaskerville = Libre_Baskerville({
   subsets: ["latin"],
