@@ -25,7 +25,7 @@ function OurProduct() {
           {our_collections.map((item, index) => (
             <CarouselItem
               key={index}
-              className="md:basis-1/2 lg:basis-1/4 p-2 overflow-hidden" // Prevent overflow
+              className="md:basis-1/2 lg:basis-1/4 p-2 overflow-hidden" 
             >
               <Item
                 key={index}
@@ -34,7 +34,7 @@ function OurProduct() {
                 name={item.name}
                 new_price={item.new_price}
                 old_price={item.old_price}
-                className="w-full h-full object-contain" // Ensure images fit properly
+                className="w-full h-full object-contain" 
               />
             </CarouselItem>
           ))}
