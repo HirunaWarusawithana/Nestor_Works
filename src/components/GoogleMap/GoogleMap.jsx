@@ -15,7 +15,7 @@ const GoogleMap = () => {
 
       const { Map } = await loader.importLibrary("maps");
       const { Marker } = await loader.importLibrary("marker");
-      const { DirectionsService, DirectionsRenderer } = await loader.importLibrary("directions");
+      //const { DirectionsService, DirectionsRenderer } = await loader.importLibrary("directions");
 
       const locationInMap = {
         lat: 6.235306978864374,
